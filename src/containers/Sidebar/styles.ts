@@ -11,8 +11,8 @@ export const BotaoTema = styled.button`
     font-weight: bold;
     padding: 8px;
     border-radius: 12px;
-    color: #eee;
-    background-color: #282a35;
+    color: ${(props) => props.theme.corDeFundo};
+    background-color: ${(props) => props.theme.corPrinciapal};
     cursor:pointer;
 `
 

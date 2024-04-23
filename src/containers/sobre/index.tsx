@@ -1,19 +1,23 @@
 import Titulo from "../../components/title";
 import Paragrafo from "../../components/paragrafo";
-import { GithubSecao } from "./styles";
+import { SecaoSobre } from "./styles";
+
 
 const Sobre = () => (
     <section>
-        <Titulo fontSize={16}>
+        <Titulo fontSize={20}>
             Sobre mim
         </Titulo>
+        <SecaoSobre>
         <Paragrafo tipo="principal">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae consequuntur itaque, quae optio saepe corporis nesciunt, aliquam esse laudantium, sunt officia culpa ex explicabo facilis expedita harum praesentium voluptates? Itaque.
+        Descobri minha paixão e aptidão no desenvolvimento de sistemas, capacitando-me como desenvolvedor Full Stack. Minha expertise inclui a criação de aplicações web com as 
+        melhores práticas de design, utilizando frameworks modernos, além de manter a responsividade de todo o projeto funcionando da melhor forma possível. Na EBAC, adquiri 
+        habilidades abrangentes em desenvolvimento back-end e front-end, além de experiência em integração de sistemas e testes com APIs. Com 8 anos de experiência como engenheiro, 
+        desenvolvi habilidades sólidas, técnicas e pessoais, além de ter liderado equipes de profissionais de projeto. Agora trago essa experiência para a área de desenvolvimento. 
+        Além disso, planejo expandir meus conhecimentos com cursos adicionais em Desenvolvimento de Aplicativos e obter um bacharelado em Engenharia de Software para aprimorar ainda 
+        mais minha carreira no desenvolvimento de software.
         </Paragrafo>
-        <GithubSecao>
-            <img src="https://github-readme-stats.vercel.app/api?username=Gustavogdcosta&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/>
-            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Gustavogdcosta&layout=compact&langs_count=7&theme=dracula"/>
-        </GithubSecao>
+        </SecaoSobre>
     </section>
 )
 
