@@ -62,7 +62,7 @@ const Projetos = () => (
                 <ProjetoOito />
             </li>
         </Lista>
-        <Titulo fontSize={18}> Projetos utilizando Sass ou Less atribuidos ao Gulp ou Grunt </Titulo>
+        <Titulo fontSize={16}> Sass ou Less atribuidos ao Gulp ou Grunt </Titulo>
         <Lista>
             <li>
                 <ProjetoNove />
@@ -86,7 +86,7 @@ const Projetos = () => (
                 <ProjetoQuatorze />
             </li>
         </Lista>
-        <Titulo fontSize={18}> Projetos utilizando programação convencional </Titulo>
+        <Titulo fontSize={18}> Programação convencional </Titulo>
         <Lista>
             <li>
                 <ProjetoQuinze />
@@ -101,7 +101,7 @@ const Projetos = () => (
                 <ProjetoDezoito />
             </li>
         </Lista>
-        <Titulo fontSize={18}> Projetos utilizando programação com JQuery e Fetch Api </Titulo>
+        <Titulo fontSize={18}> JQuery e Fetch Api </Titulo>
         <Lista>
             <li>
                 <ProjetoDezenove />

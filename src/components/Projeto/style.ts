@@ -69,10 +69,15 @@ export const BotaoVcestaAqui = styled.button`
     left: 165px;
 
     @media (min-width: 769px) and (max-width: 886px) {
-        position: absolute;
-        top: 90px;
-        left: 165px;
-    }
+            position: absolute;
+            top: 90px;
+            left: 165px;
+        }
 
+    @media (max-width: 439px) {
+            position: absolute;
+            top: 90px;
+            left: 165px;
+        }
     }
 `
