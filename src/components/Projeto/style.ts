@@ -7,6 +7,13 @@ export const Card = style.div`
     position: relative;
 `
 
+export const Carddois = style.div`
+    border: 1px solid ${(props) => props.theme.corDaBorda};
+    padding: 16px;
+    height: 190px;
+    position: relative;
+`
+
 export const LinkBotao = styled.a`
     background-color: ${(props) => props.theme.corDeFundoBotao};
     color: ${(props) => props.theme.corDeFundo};
@@ -18,7 +25,7 @@ export const LinkBotao = styled.a`
     margin-right: 10px;
     border-radius: 10px;
     position: absolute;
-    top: 110px;
+    bottom: 10px;
 
     &:hover {
         cursor: pointer;
@@ -35,7 +42,7 @@ export const BotaoVizitarSite = styled.a`
     margin-right: 10px;
     border-radius: 10px;
     position: absolute;
-    top: 110px;
+    bottom: 10px;
     left: 165px;
 
     &:hover {
@@ -65,18 +72,18 @@ export const BotaoVcestaAqui = styled.button`
     border: 2px solid ${(props) => props.theme.corDeFundoBotao};
     border-radius: 10px;
     position: absolute;
-    top: 110px;
+    bottom: 10px;
     left: 165px;
 
     @media (min-width: 769px) and (max-width: 886px) {
             position: absolute;
-            top: 90px;
+            bottom: 10px;
             left: 165px;
         }
 
     @media (max-width: 439px) {
             position: absolute;
-            top: 90px;
+            bottom: 10px;
             left: 165px;
         }
     }
