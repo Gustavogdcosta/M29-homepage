@@ -13,6 +13,7 @@ import ProjetoDois from "../../components/Projeto/2-Lojacarrinho";
 import ProjetoVinte from "../../components/Projeto/20-GaleriaDefotos";
 import ProjetoVinteEUm from "../../components/Projeto/21-ListadeContatos";
 import ProjetoVinteDois from "../../components/Projeto/22-AplicacaoFetch";
+import ProjetoVinteTres from "../../components/Projeto/23-Listadetarefas";
 import ProjetoTres from "../../components/Projeto/3-Portfolio";
 import ProjetoQuatro from "../../components/Projeto/4-PortaldeEmpregos";
 import ProjetoCinco from "../../components/Projeto/5-Listadetarefas";
@@ -28,6 +29,9 @@ const Projetos = () => (
         <Titulo fontSize={20}>Portfólio de Projetos</Titulo>
         <Titulo fontSize={18}> Projetos utilizando React com Redux </Titulo>
         <Lista>
+            <li>
+                <ProjetoVinteTres />
+            </li>
             <li>
                 <Projeto />
             </li>
