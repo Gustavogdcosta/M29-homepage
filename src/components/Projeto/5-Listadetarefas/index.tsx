@@ -1,15 +1,16 @@
 import Paragrafo from "../../paragrafo";
 import Titulo from "../../title";
-import { Card, LinkBotao} from '../style';
+import { Cardtres, LinkBotao} from '../style';
 
 const ProjetoCinco = () => (
-    <Card>
+    <Cardtres>
         <Titulo> To Do List com VueJs </Titulo>
         <Paragrafo tipo="secundario">
-            Modelo de lista de afazeres executado com o VueJs.
+            Este modelo representa uma lista de afazeres desenvolvida utilizando Vue.js. Neste modelo, os usuários podem criar, visualizar, editar e excluir tarefas em uma lista de afazeres,  
+            ele serve como uma base sólida para a implementação de uma variedade de aplicativos de lista de afazeres, com flexibilidade para personalização e extensão conforme necessário.
         </Paragrafo>
         <LinkBotao href="https://github.com/Gustavogdcosta/Modulo27-exemplo-todoListComVueJs" target="_blank"> Visualizar Código </LinkBotao>
-    </Card>
+    </Cardtres>
     )
 
 
