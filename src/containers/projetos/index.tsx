@@ -15,6 +15,8 @@ import ProjetoVinteEUm from "../../components/Projeto/21-ListadeContatos";
 import ProjetoVinteDois from "../../components/Projeto/22-AplicacaoFetch";
 import ProjetoVinteTres from "../../components/Projeto/23-Listadetarefas";
 import ProjetoVinteQuatro from "../../components/Projeto/24-listadecontatos";
+import ProjetoVinteCinco from "../../components/Projeto/25-Testecomstore";
+import ProjetoVinteSeis from "../../components/Projeto/26-testeunitarioReact";
 import ProjetoTres from "../../components/Projeto/3-Portfolio";
 import ProjetoQuatro from "../../components/Projeto/4-PortaldeEmpregos";
 import ProjetoCinco from "../../components/Projeto/5-Listadetarefas";
@@ -28,6 +30,15 @@ import { Lista } from "./style";
 const Projetos = () => (
     <section>
         <Titulo fontSize={20}>Portfólio de Projetos</Titulo>
+        <Titulo fontSize={18}> Projetos com testes de integração - React </Titulo>
+        <Lista>
+            <li>
+                <ProjetoVinteCinco />
+            </li>
+            <li>
+                <ProjetoVinteSeis />
+            </li>
+        </Lista>
         <Titulo fontSize={18}> Projetos utilizando React com Redux </Titulo>
         <Lista>
             <li>
