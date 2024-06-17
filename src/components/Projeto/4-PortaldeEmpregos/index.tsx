@@ -1,5 +1,5 @@
 import Paragrafo from "../../paragrafo";
-import Titulo from "../../title";
+import {Titulo} from "../../title";
 import { Carddois, LinkBotao} from '../style';
 
 const ProjetoQuatro = () => (

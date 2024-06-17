@@ -24,117 +24,194 @@ import ProjetoSeis from "../../components/Projeto/6-CalculadoraVue";
 import ProjetoSete from "../../components/Projeto/7-LandingPage";
 import ProjetoOito from "../../components/Projeto/8-LandingpageAniversario";
 import ProjetoNove from "../../components/Projeto/9-Avatarworld";
-import Titulo from "../../components/title";
+import {Titulo, TituloSecoes} from "../../components/title";
 import { Lista } from "./style";
+import { Accordion, AccordionItem, AccordionItemButton, AccordionItemHeading, AccordionItemPanel } from "react-accessible-accordion";
+import { FaChevronDown, FaChevronUp } from 'react-icons/fa'
+
+
 
 const Projetos = () => (
     <section>
-        <Titulo fontSize={20}>Portfólio de Projetos</Titulo>
-        <Titulo fontSize={18}> Projetos com testes de integração - React </Titulo>
-        <Lista>
-            <li>
-                <ProjetoVinteCinco />
-            </li>
-            <li>
-                <ProjetoVinteSeis />
-            </li>
-        </Lista>
-        <Titulo fontSize={18}> Projetos utilizando React com Redux </Titulo>
-        <Lista>
-            <li>
-                <ProjetoVinteQuatro />
-            </li>
-            <li>
-                <ProjetoVinteTres />
-            </li>
-            <li>
-                <Projeto />
-            </li>
-            <li>
-                <ProjetoDois />
-            </li>
-        </Lista>
-        <Titulo fontSize={18}> Projetos utilizando React </Titulo>
-        <Lista>
-            <li>
-                <ProjetoTres />
-            </li>
-            <li>
-                <ProjetoQuatro />
-            </li>
-        </Lista>
-        <Titulo fontSize={18}> Projetos utilizando VueJS </Titulo>
-        <Lista>
-            <li>
-                <ProjetoCinco />
-            </li>
-            <li>
-                <ProjetoSeis />
-            </li>
-        </Lista>
-        <Titulo fontSize={18}> Projetos utilizando Parcel </Titulo>
-        <Lista>
-            <li>
-                <ProjetoSete />
-            </li>
-            <li>
-                <ProjetoOito />
-            </li>
-        </Lista>
-        <Titulo fontSize={16}> Sass ou Less atribuidos ao Gulp ou Grunt </Titulo>
-        <Lista>
-            <li>
-                <ProjetoNove />
-            </li>
-            <li>
-                <ProjetoDez />
-            </li>
-            <li>
-                <ProjetoOnze />
-            </li>
-        </Lista>
-        <Titulo fontSize={18}> Projetos utilizando Bootstrap </Titulo>
-        <Lista>
-            <li>
-                <ProjetoDoze />
-            </li>
-            <li>
-                <ProjetoTreza />
-            </li>
-            <li>
-                <ProjetoQuatorze />
-            </li>
-        </Lista>
-        <Titulo fontSize={18}> Programação convencional </Titulo>
-        <Lista>
-            <li>
-                <ProjetoQuinze />
-            </li>
-            <li>
-                <ProjetoDezesseis />
-            </li>
-            <li>
-                <ProjetoDezessete />
-            </li>
-            <li>
-                <ProjetoDezoito />
-            </li>
-        </Lista>
-        <Titulo fontSize={18}> JQuery e Fetch Api </Titulo>
-        <Lista>
-            <li>
-                <ProjetoDezenove />
-            </li>
-            <li>
-                <ProjetoVinte />
-            </li>
-            <li>
-                <ProjetoVinteEUm />
-            </li>
-            <li>
-                <ProjetoVinteDois />
-            </li>
-        </Lista>
+        <Titulo fontSize={30}>Portfólio de Projetos</Titulo>
+        <Accordion className="detailsPrincipal" allowZeroExpanded>
+            <AccordionItem uuid={"Front-End"}>
+                <AccordionItemHeading>
+                    <AccordionItemButton>
+                        <Titulo fontSize={24}>Projetos de Front-End</Titulo>
+                        <span className="icon">
+                        <FaChevronDown className="collapsed" />
+                        <FaChevronUp className="expanded" />
+                        </span>
+                    </AccordionItemButton>
+                </AccordionItemHeading>
+                <AccordionItemPanel>
+            <details className="detailsItem">
+                <summary><TituloSecoes fontSize={18}> Projetos com testes de integração - React </TituloSecoes></summary>
+                <Lista>
+                    <li>
+                        <ProjetoVinteCinco />
+                    </li>
+                    <li>
+                        <ProjetoVinteSeis />
+                    </li>
+                </Lista>
+
+            </details>
+            
+            <details className="detailsItem">
+                <summary><TituloSecoes fontSize={18}> Projetos utilizando React com Redux </TituloSecoes></summary>
+                <Lista>
+                    <li>
+                        <ProjetoVinteQuatro />
+                    </li>
+                    <li>
+                        <ProjetoVinteTres />
+                    </li>
+                    <li>
+                        <Projeto />
+                    </li>
+                    <li>
+                        <ProjetoDois />
+                    </li>
+                </Lista>
+            </details>
+            
+            <details className="detailsItem">
+                <summary>
+            <TituloSecoes fontSize={18}> Projetos utilizando React </TituloSecoes>
+                </summary>
+            <Lista>
+                <li>
+                    <ProjetoTres />
+                </li>
+                <li>
+                    <ProjetoQuatro />
+                </li>
+            </Lista>
+            </details>
+
+            <details className="detailsItem">
+                <summary>
+            <TituloSecoes fontSize={18}> Projetos utilizando VueJS </TituloSecoes>
+                </summary>
+            <Lista>
+                <li>
+                    <ProjetoCinco />
+                </li>
+                <li>
+                    <ProjetoSeis />
+                </li>
+            </Lista>
+            </details>
+
+            <details className="detailsItem">
+                <summary>
+            <TituloSecoes fontSize={18}> Projetos utilizando Parcel </TituloSecoes>
+                </summary>
+            <Lista>
+                <li>
+                    <ProjetoSete />
+                </li>
+                <li>
+                    <ProjetoOito />
+                </li>
+            </Lista>
+            </details>
+
+            <details className="detailsItem">
+                <summary>
+            <TituloSecoes fontSize={18}> Sass ou Less atribuidos ao Gulp ou Grunt </TituloSecoes>
+                </summary>
+            <Lista>
+                <li>
+                    <ProjetoNove />
+                </li>
+                <li>
+                    <ProjetoDez />
+                </li>
+                <li>
+                    <ProjetoOnze />
+                </li>
+            </Lista>
+            </details>
+
+            <details className="detailsItem">
+                <summary>
+            <TituloSecoes fontSize={18}> Projetos utilizando Bootstrap </TituloSecoes>
+                </summary>
+            <Lista>
+                <li>
+                    <ProjetoDoze />
+                </li>
+                <li>
+                    <ProjetoTreza />
+                </li>
+                <li>
+                    <ProjetoQuatorze />
+                </li>
+            </Lista>
+            </details>
+
+            <details className="detailsItem">
+                <summary>
+            <TituloSecoes fontSize={18}> Programação convencional </TituloSecoes>
+                </summary>
+            <Lista>
+                <li>
+                    <ProjetoQuinze />
+                </li>
+                <li>
+                    <ProjetoDezesseis />
+                </li>
+                <li>
+                    <ProjetoDezessete />
+                </li>
+                <li>
+                    <ProjetoDezoito />
+                </li>
+            </Lista>
+            </details>
+
+            <details className="detailsItem">
+                <summary>
+            <TituloSecoes fontSize={18}> JQuery e Fetch Api </TituloSecoes>
+                </summary>
+            <Lista>
+                <li>
+                    <ProjetoDezenove />
+                </li>
+                <li>
+                    <ProjetoVinte />
+                </li>
+                <li>
+                    <ProjetoVinteEUm />
+                </li>
+                <li>
+                    <ProjetoVinteDois />
+                </li>
+            </Lista>
+            </details>
+                </AccordionItemPanel>
+            </AccordionItem>
+        </Accordion>
+        
+        <Accordion className="detailsPrincipal" allowZeroExpanded>
+            <AccordionItem uuid={"Front-End"}>
+                <AccordionItemHeading>
+                    <AccordionItemButton>
+                        <Titulo fontSize={24}>Projetos de Back-End</Titulo>
+                        <span className="icon">
+                        <FaChevronDown className="collapsed" />
+                        <FaChevronUp className="expanded" />
+                        </span>
+                    </AccordionItemButton>
+                </AccordionItemHeading>
+                <AccordionItemPanel>
+                    secao 2
+                </AccordionItemPanel>
+            </AccordionItem>
+        </Accordion>
     </section>
 )
 

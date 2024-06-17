@@ -3,7 +3,7 @@ import style, { styled } from 'styled-components'
 export const Card = style.div`
     border: 1px solid ${(props) => props.theme.corDaBorda};
     padding: 16px;
-    height: 220px;
+    height: 240px;
     position: relative;
     border-radius: 10px;
 

@@ -1,11 +1,11 @@
-import Titulo from "../../components/title";
+import {Titulo} from "../../components/title";
 import Paragrafo from "../../components/paragrafo";
 import { SecaoSobre } from "./styles";
 
 
 const Sobre = () => (
     <section>
-        <Titulo fontSize={20}>
+        <Titulo fontSize={30}>
             Sobre mim
         </Titulo>
         <SecaoSobre>

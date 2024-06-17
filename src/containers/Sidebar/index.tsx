@@ -1,6 +1,6 @@
 import Avatar from "../../components/Avatar"
 import Paragrafo from "../../components/paragrafo"
-import Titulo from "../../components/title"
+import {Titulo} from "../../components/title"
 import {BotaoTema, Descricao, SidebarContainer} from './styles'
 
 type Props = {

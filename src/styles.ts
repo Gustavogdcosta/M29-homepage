@@ -16,6 +16,54 @@ const EstiloGlobal = createGlobalStyle `
       padding-top: 16px;
     }
   }
+  
+  .detailsPrincipal{
+  border: 1px solid ${(props) => props.theme.corDaBorda};
+  padding: 10px;
+  border-radius: 8px;
+  width: 98.5%;
+  cursor: pointer;  
+  margin-bottom: 10px;
+
+  .detailsPrincipal[open] {
+  &:hover{
+    background-color: transparent;
+    }
+  }
+  
+
+  .detailsItem>summary{
+    border-bottom: 1px solid ${(props) => props.theme.corDaBorda};
+    margin-top: 10px;
+
+    &:hover{
+    background-color: ${(props) => props.theme.corDaBorda};
+    }
+  }
+  
+  .accordion__button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .icon {
+    margin-left: 10px;
+    display: flex;
+  }
+
+  .icon .expanded {
+    display: none;
+  }
+
+  .accordion__item--expanded .icon .collapsed {
+    display: none;
+  }
+
+  .accordion__item--expanded .icon .expanded {
+    display: block;
+}
+
 `
 
 export default EstiloGlobal;
