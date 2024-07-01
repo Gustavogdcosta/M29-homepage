@@ -24,11 +24,13 @@ import ProjetoSeis from "../../components/Projeto/6-CalculadoraVue";
 import ProjetoSete from "../../components/Projeto/7-LandingPage";
 import ProjetoOito from "../../components/Projeto/8-LandingpageAniversario";
 import ProjetoNove from "../../components/Projeto/9-Avatarworld";
+
 import {Titulo, TituloSecoes} from "../../components/title";
 import { Lista } from "./style";
-import { Accordion, AccordionItem, AccordionItemButton, AccordionItemHeading, AccordionItemPanel } from "react-accessible-accordion";
-import { FaChevronDown, FaChevronUp } from 'react-icons/fa'
 
+import { Accordion, AccordionItem, AccordionItemButton, AccordionItemHeading, AccordionItemPanel } from "react-accessible-accordion";
+import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
+import './CustomAccordions.css'
 
 
 const Projetos = () => (
