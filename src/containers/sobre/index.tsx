@@ -5,7 +5,7 @@ import { SecaoSobre } from "./styles";
 
 const Sobre = () => (
     <section>
-        <Titulo fontSize={30}>
+        <Titulo fontSize={1.5}>
             Sobre mim
         </Titulo>
         <SecaoSobre>

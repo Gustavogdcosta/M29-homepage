@@ -3,26 +3,47 @@ import style, { styled } from 'styled-components'
 export const Card = style.div`
     border: 1px solid ${(props) => props.theme.corDaBorda};
     padding: 16px;
-    height: 240px;
+    height: 28vw;
     position: relative;
     border-radius: 10px;
 
-    @media (min-width: 769px) and (max-width: 886px) {
-        height: 300px;
+    @media (max-width: 425px) {
+    height: 60vw;
+    }
+
+    @media (min-width: 1441px) {
+    height: 220px;
     }
 `
 
 export const Carddois = style(Card)`
-    height: 300px;
-    @media (min-width: 769px) and (max-width: 886px) {
-        height: 400px;
+    height: 35vw;
+
+    @media (max-width: 425px) {
+    height: 70vw;
+    }
+    @media (min-width: 1441px) {
+    height: 280px;
     }
 `
 
 export const Cardtres = style(Card)`
+    height: 30vw;
+    @media (max-width: 425px) {
+    height: 65vw;
+    }
+    @media (min-width: 1441px) {
     height: 250px;
-    @media (min-width: 769px) and (max-width: 886px) {
-        height: 330px;
+    }
+`
+
+export const CardQuatro = style(Card)`
+    height: 40vw;
+    @media (max-width: 425px) {
+    height: 85vw;
+    }
+    @media (min-width: 1441px) {
+    height: 320px;
     }
 `
 

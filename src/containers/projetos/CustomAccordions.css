@@ -14,10 +14,13 @@
         }
     }
 
-
+    .detailsItem {
+        word-break: break-all;
+    }
     .detailsItem>summary{
         border-bottom: 1px solid #c1c1c1;
         margin-top: 10px;
+        word-break: break-all;
     }
 
     .detailsItem>summary:hover{

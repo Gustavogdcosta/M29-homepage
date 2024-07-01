@@ -31,16 +31,20 @@ import { Lista } from "./style";
 import { Accordion, AccordionItem, AccordionItemButton, AccordionItemHeading, AccordionItemPanel } from "react-accessible-accordion";
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
 import './CustomAccordions.css'
+import ProjetoVinteSete from "../../components/Projeto/27-TesteE2e";
+import ProjetoVinteoito from "../../components/Projeto/28-testeE2E";
+import ProjetoVinteNove from "../../components/Projeto/29-Eplay";
+import ProjetoTrintaUm from "../../components/Projeto/31-ColetaDeDados";
 
 
 const Projetos = () => (
     <section>
-        <Titulo fontSize={30}>Portfólio de Projetos</Titulo>
+        <Titulo fontSize={1.5}>Portfólio de Projetos</Titulo>
         <Accordion className="detailsPrincipal" allowZeroExpanded>
             <AccordionItem uuid={"Front-End"}>
                 <AccordionItemHeading>
                     <AccordionItemButton>
-                        <Titulo fontSize={24}>Projetos de Front-End</Titulo>
+                        <Titulo fontSize={1.2}>Projetos de Front-End</Titulo>
                         <span className="icon">
                         <FaChevronDown className="collapsed" />
                         <FaChevronUp className="expanded" />
@@ -48,152 +52,175 @@ const Projetos = () => (
                     </AccordionItemButton>
                 </AccordionItemHeading>
                 <AccordionItemPanel>
-            <details className="detailsItem">
-                <summary><TituloSecoes fontSize={18}> Projetos com testes de integração - React </TituloSecoes></summary>
-                <Lista>
-                    <li>
-                        <ProjetoVinteCinco />
-                    </li>
-                    <li>
-                        <ProjetoVinteSeis />
-                    </li>
-                </Lista>
+                <details className="detailsItem">
+                        <summary><TituloSecoes fontSize={1}> Integração e Mutação de API </TituloSecoes></summary>
+                        <Lista>
+                            <li>
+                                <ProjetoVinteNove />
+                            </li>
+                        </Lista>
 
-            </details>
-            
-            <details className="detailsItem">
-                <summary><TituloSecoes fontSize={18}> Projetos utilizando React com Redux </TituloSecoes></summary>
-                <Lista>
-                    <li>
-                        <ProjetoVinteQuatro />
-                    </li>
-                    <li>
-                        <ProjetoVinteTres />
-                    </li>
-                    <li>
-                        <Projeto />
-                    </li>
-                    <li>
-                        <ProjetoDois />
-                    </li>
-                </Lista>
-            </details>
-            
-            <details className="detailsItem">
-                <summary>
-            <TituloSecoes fontSize={18}> Projetos utilizando React </TituloSecoes>
-                </summary>
-            <Lista>
-                <li>
-                    <ProjetoTres />
-                </li>
-                <li>
-                    <ProjetoQuatro />
-                </li>
-            </Lista>
-            </details>
+                    </details>
 
-            <details className="detailsItem">
-                <summary>
-            <TituloSecoes fontSize={18}> Projetos utilizando VueJS </TituloSecoes>
-                </summary>
-            <Lista>
-                <li>
-                    <ProjetoCinco />
-                </li>
-                <li>
-                    <ProjetoSeis />
-                </li>
-            </Lista>
-            </details>
+                <details className="detailsItem">
+                        <summary><TituloSecoes fontSize={1}> Projetos com testes E2E - Cypress </TituloSecoes></summary>
+                        <Lista>
+                            <li>
+                                <ProjetoVinteSete />
+                            </li>
+                            <li>
+                                <ProjetoVinteoito />
+                            </li>
+                        </Lista>
 
-            <details className="detailsItem">
-                <summary>
-            <TituloSecoes fontSize={18}> Projetos utilizando Parcel </TituloSecoes>
-                </summary>
-            <Lista>
-                <li>
-                    <ProjetoSete />
-                </li>
-                <li>
-                    <ProjetoOito />
-                </li>
-            </Lista>
-            </details>
+                    </details>
 
-            <details className="detailsItem">
-                <summary>
-            <TituloSecoes fontSize={18}> Sass ou Less atribuidos ao Gulp ou Grunt </TituloSecoes>
-                </summary>
-            <Lista>
-                <li>
-                    <ProjetoNove />
-                </li>
-                <li>
-                    <ProjetoDez />
-                </li>
-                <li>
-                    <ProjetoOnze />
-                </li>
-            </Lista>
-            </details>
+                    <details className="detailsItem">
+                        <summary><TituloSecoes fontSize={1}> Projetos com testes de integração - React </TituloSecoes></summary>
+                        <Lista>
+                            <li>
+                                <ProjetoVinteCinco />
+                            </li>
+                            <li>
+                                <ProjetoVinteSeis />
+                            </li>
+                        </Lista>
 
-            <details className="detailsItem">
-                <summary>
-            <TituloSecoes fontSize={18}> Projetos utilizando Bootstrap </TituloSecoes>
-                </summary>
-            <Lista>
-                <li>
-                    <ProjetoDoze />
-                </li>
-                <li>
-                    <ProjetoTreza />
-                </li>
-                <li>
-                    <ProjetoQuatorze />
-                </li>
-            </Lista>
-            </details>
+                    </details>
+                    
+                    <details className="detailsItem">
+                        <summary><TituloSecoes fontSize={1}> Projetos utilizando React com Redux </TituloSecoes></summary>
+                        <Lista>
+                            <li>
+                                <ProjetoVinteQuatro />
+                            </li>
+                            <li>
+                                <ProjetoVinteTres />
+                            </li>
+                            <li>
+                                <Projeto />
+                            </li>
+                            <li>
+                                <ProjetoDois />
+                            </li>
+                        </Lista>
+                    </details>
+                    
+                    <details className="detailsItem">
+                        <summary>
+                    <TituloSecoes fontSize={1}> Projetos utilizando React </TituloSecoes>
+                        </summary>
+                    <Lista>
+                        <li>
+                            <ProjetoTres />
+                        </li>
+                        <li>
+                            <ProjetoQuatro />
+                        </li>
+                    </Lista>
+                    </details>
 
-            <details className="detailsItem">
-                <summary>
-            <TituloSecoes fontSize={18}> Programação convencional </TituloSecoes>
-                </summary>
-            <Lista>
-                <li>
-                    <ProjetoQuinze />
-                </li>
-                <li>
-                    <ProjetoDezesseis />
-                </li>
-                <li>
-                    <ProjetoDezessete />
-                </li>
-                <li>
-                    <ProjetoDezoito />
-                </li>
-            </Lista>
-            </details>
+                    <details className="detailsItem">
+                        <summary>
+                    <TituloSecoes fontSize={1}> Projetos utilizando VueJS </TituloSecoes>
+                        </summary>
+                    <Lista>
+                        <li>
+                            <ProjetoCinco />
+                        </li>
+                        <li>
+                            <ProjetoSeis />
+                        </li>
+                    </Lista>
+                    </details>
 
-            <details className="detailsItem">
-                <summary>
-            <TituloSecoes fontSize={18}> JQuery e Fetch Api </TituloSecoes>
-                </summary>
-            <Lista>
-                <li>
-                    <ProjetoDezenove />
-                </li>
-                <li>
-                    <ProjetoVinte />
-                </li>
-                <li>
-                    <ProjetoVinteEUm />
-                </li>
-                <li>
-                    <ProjetoVinteDois />
-                </li>
-            </Lista>
-            </details>
+                    <details className="detailsItem">
+                        <summary>
+                    <TituloSecoes fontSize={1}> Projetos utilizando Parcel </TituloSecoes>
+                        </summary>
+                    <Lista>
+                        <li>
+                            <ProjetoSete />
+                        </li>
+                        <li>
+                            <ProjetoOito />
+                        </li>
+                    </Lista>
+                    </details>
+
+                    <details className="detailsItem">
+                        <summary>
+                    <TituloSecoes fontSize={1}> Sass ou Less atribuidos ao Gulp ou Grunt </TituloSecoes>
+                        </summary>
+                    <Lista>
+                        <li>
+                            <ProjetoNove />
+                        </li>
+                        <li>
+                            <ProjetoDez />
+                        </li>
+                        <li>
+                            <ProjetoOnze />
+                        </li>
+                    </Lista>
+                    </details>
+
+                    <details className="detailsItem">
+                        <summary>
+                    <TituloSecoes fontSize={1}> Projetos utilizando Bootstrap </TituloSecoes>
+                        </summary>
+                    <Lista>
+                        <li>
+                            <ProjetoDoze />
+                        </li>
+                        <li>
+                            <ProjetoTreza />
+                        </li>
+                        <li>
+                            <ProjetoQuatorze />
+                        </li>
+                    </Lista>
+                    </details>
+
+                    <details className="detailsItem">
+                        <summary>
+                    <TituloSecoes fontSize={1}> Programação convencional </TituloSecoes>
+                        </summary>
+                    <Lista>
+                        <li>
+                            <ProjetoQuinze />
+                        </li>
+                        <li>
+                            <ProjetoDezesseis />
+                        </li>
+                        <li>
+                            <ProjetoDezessete />
+                        </li>
+                        <li>
+                            <ProjetoDezoito />
+                        </li>
+                    </Lista>
+                    </details>
+
+                    <details className="detailsItem">
+                        <summary>
+                    <TituloSecoes fontSize={1}> JQuery e Fetch Api </TituloSecoes>
+                        </summary>
+                    <Lista>
+                        <li>
+                            <ProjetoDezenove />
+                        </li>
+                        <li>
+                            <ProjetoVinte />
+                        </li>
+                        <li>
+                            <ProjetoVinteEUm />
+                        </li>
+                        <li>
+                            <ProjetoVinteDois />
+                        </li>
+                    </Lista>
+                    </details>
                 </AccordionItemPanel>
             </AccordionItem>
         </Accordion>
@@ -202,7 +229,7 @@ const Projetos = () => (
             <AccordionItem uuid={"Front-End"}>
                 <AccordionItemHeading>
                     <AccordionItemButton>
-                        <Titulo fontSize={24}>Projetos de Back-End</Titulo>
+                        <Titulo fontSize={1.2}>Projetos de Back-End</Titulo>
                         <span className="icon">
                         <FaChevronDown className="collapsed" />
                         <FaChevronUp className="expanded" />
@@ -210,7 +237,16 @@ const Projetos = () => (
                     </AccordionItemButton>
                 </AccordionItemHeading>
                 <AccordionItemPanel>
-                    secao 2
+                    <details className="detailsItem">
+                        <summary>
+                        <TituloSecoes fontSize={1}> Programação Orientada a Objetos - Java </TituloSecoes>
+                        </summary>
+                            <Lista>
+                                <li>
+                                    <ProjetoTrintaUm/>
+                                </li>
+                            </Lista>
+                        </details>
                 </AccordionItemPanel>
             </AccordionItem>
         </Accordion>
