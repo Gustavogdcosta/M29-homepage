@@ -76,7 +76,7 @@ const Projetos = () => (
                     </details>
 
                     <details className="detailsItem">
-                        <summary><TituloSecoes fontSize={1}> Projetos com testes de integração - React </TituloSecoes></summary>
+                        <summary><TituloSecoes fontSize={1}> Testes de integração - React </TituloSecoes></summary>
                         <Lista>
                             <li>
                                 <ProjetoVinteCinco />
@@ -150,7 +150,7 @@ const Projetos = () => (
 
                     <details className="detailsItem">
                         <summary>
-                    <TituloSecoes fontSize={1}> Sass ou Less atribuidos ao Gulp ou Grunt </TituloSecoes>
+                    <TituloSecoes fontSize={1}> Sass/Less atribuidos ao Gulp/ Grunt </TituloSecoes>
                         </summary>
                     <Lista>
                         <li>
@@ -239,7 +239,7 @@ const Projetos = () => (
                 <AccordionItemPanel>
                     <details className="detailsItem">
                         <summary>
-                        <TituloSecoes fontSize={1}> Programação Orientada a Objetos - Java </TituloSecoes>
+                        <TituloSecoes fontSize={1}> Java </TituloSecoes>
                         </summary>
                             <Lista>
                                 <li>

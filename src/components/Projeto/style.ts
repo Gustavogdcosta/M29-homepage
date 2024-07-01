@@ -7,7 +7,11 @@ export const Card = style.div`
     position: relative;
     border-radius: 10px;
 
-    @media (max-width: 425px) {
+    @media (max-width: 375px) {
+    height: 70vw;
+    }
+
+    @media (min-width: 376px) and (max-width: 425px) {
     height: 60vw;
     }
 
@@ -19,7 +23,11 @@ export const Card = style.div`
 export const Carddois = style(Card)`
     height: 35vw;
 
-    @media (max-width: 425px) {
+    @media (max-width: 375px) {
+    height: 90vw;
+    }
+
+    @media (min-width: 376px) and  (max-width: 425px) {
     height: 70vw;
     }
     @media (min-width: 1441px) {
@@ -29,7 +37,10 @@ export const Carddois = style(Card)`
 
 export const Cardtres = style(Card)`
     height: 30vw;
-    @media (max-width: 425px) {
+    @media (max-width: 375px) {
+    height: 80vw;
+    }
+    @media (min-width: 376px) and  (max-width: 425px) {
     height: 65vw;
     }
     @media (min-width: 1441px) {
@@ -39,8 +50,13 @@ export const Cardtres = style(Card)`
 
 export const CardQuatro = style(Card)`
     height: 40vw;
-    @media (max-width: 425px) {
-    height: 85vw;
+
+    @media (max-width: 375px) {
+    height: 120vw;
+    }
+
+    @media (min-width: 376px) and (max-width: 425px) {
+    height: 90vw;
     }
     @media (min-width: 1441px) {
     height: 320px;

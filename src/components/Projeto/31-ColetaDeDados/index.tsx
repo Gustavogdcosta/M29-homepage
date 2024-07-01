@@ -1,9 +1,9 @@
 import Paragrafo from "../../paragrafo";
 import {Titulo} from "../../title";
-import { Card, LinkBotao} from '../style';
+import { Cardtres, LinkBotao} from '../style';
 
 const ProjetoTrintaUm = () => (
-    <Card>
+    <Cardtres>
         <Titulo> Coleta de Dados </Titulo>
         <Paragrafo tipo="secundario">
         Desenvolvi uma aplicação orientada a objetos em Java, projetada para coletar informações dos usuários e criar uma lista ordenada de 
@@ -11,7 +11,7 @@ const ProjetoTrintaUm = () => (
         Todas as informações são inseridas dinamicamente, oferecendo uma experiência personalizada e interativa. 
         </Paragrafo>
         <LinkBotao href="https://github.com/Gustavogdcosta/m12-backend-entrega" target="_blank"> Visualizar Código </LinkBotao>
-    </Card>
+    </Cardtres>
     )
 
 
